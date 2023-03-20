@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    <main>
+      {% include header.html %}
+
+      <article id="single" class="max-width">
+        <header>
+          <h1>{{ page.title }}</h1>
+        </header>
+        {{ content }}
+        {% include ads-single.html %}
+      </article>
+      <div class="max-width">
+        <header class="heading">
+          <h2>+ artigos</h2>
+        </header>
+        <div class="horizontal-list">
+          {% assign articles = site.posts | where_exp:"post","post.url != page.url and post.categories contains 'artigo'" %}
+          {% for post in articles limit: 5 %}
+            <article>
+              <figure>
+                <a href="{{ post.url }}">
+                  <img src="{{ post.thumb }}" />
+                </a>
+              </figure>
+              <h3>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h3>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+      {% include footer-course.html %}
+    </main>
+  </body>
+</html>

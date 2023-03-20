@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    <main>
+      {% include header.html %}
+      <article id="single" class="max-width container">
+        <header>
+          <h1>{{ page.title }}</h1>
+        </header>
+        {{ content }}
+      </article>
+      {% include footer.html %}
+    </main>
+  </body>
+</html>

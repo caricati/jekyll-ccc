@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    <main>
+      {% include header.html %}
+      <div class="frame-video-container">
+        <div class="max-width">
+          <div class="full-video-frame">
+            <iframe
+              width="560"
+              height="315"
+              src="{{ page.videoEmbed }}?autoplay=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <article id="single" class="max-width">
+        <header>
+          <h1>{{ page.title }}</h1>
+        </header>
+        {{ content }}
+        {% include ads-single.html %}
+      </article>
+      <div class="max-width">
+        <header class="heading">
+          <h2>+ Vídeos</h2>
+        </header>
+        <div class="horizontal-list">
+          {% assign videos = site.posts | where_exp:"post","post.url != page.url and post.categories contains 'video'" %}
+          {% for post in videos limit:5 %}
+            <article>
+              <figure>
+                <a href="{{ post.url }}">
+                  <img src="{{ post.thumb }}" />
+                </a>
+              </figure>
+              <h3>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h3>
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+      {% include footer-course.html %}
+    </main>
+  </body>
+</html>

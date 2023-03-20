@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ site.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    <main id="home">
+      {% include header.html %}
+
+      <section class="articles max-width">
+        {% assign articles = site.posts | where_exp: "item", "item.categories contains 'artigo'" %}
+
+        {% for post in articles limit: 1 %}
+          <article class="feature-article">
+            <figure>
+              <a href="{{ post.url }}">
+                <img src="{{ post.thumb }}" alt="{{ post.title }}" />
+              </a>
+            </figure>
+            <h3>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+          </article>
+        {% endfor %}
+
+
+        <div class="article-list">
+          {% for post in articles limit: 4 offset: 1 %}
+            <article>
+              <figure>
+                <a href="{{ post.url }}">
+                  <img src="{{ post.thumb }}" alt="{{ post.title }}" />
+                </a>
+              </figure>
+              <h3>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h3>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <div class="videos-feature">
+        <section class="videos max-width">
+          <header>
+            <h2>Últimos vídeos</h2>
+          </header>
+          <div class="video-list">
+            {% assign videos = site.posts | where_exp: "item", "item.categories contains 'video'" %}
+            {% for post in videos limit: 6 %}
+              {% if post.categories contains "video" %}
+                <article>
+                  <figure>
+                    <a href="{{ post.url }}">
+                      <img src="{{ post.thumb }}" alt="{{ post.title }}" />
+                    </a>
+                  </figure>
+                  <h3>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                  </h3>
+                </article>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </section>
+      </div>
+
+      {% include footer-course.html %}
+    </main>
+  </body>
+</html>
