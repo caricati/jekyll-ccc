@@ -1,4 +1,5 @@
-#single .course-timeline, .course-timeline {
+#single .course-timeline,
+.course-timeline {
   list-style: none;
   margin: 0;
 
@@ -32,7 +33,6 @@
     }
   }
 }
-
 
 #single {
   padding-top: 2rem;
@@ -105,11 +105,39 @@
     margin: 2rem 0 3rem;
 
     span {
-      color: #382a24;
-      background-color: #f7e6df;
-      padding: 0.5rem 1rem;
-      border-radius: 0.25rem;
-      margin-right: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      height: 32px;
+      color: #454f81;
+      background-color: #dbdef0;
+      padding: 0 1.25rem 0 1.5rem;
+      border-radius: 0.5rem;
+      margin-right: 1rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -8px;
+        top: 3px;
+        width: 27px;
+        height: 27px;
+        background-color: #dbdef0;
+        transform: rotate(45deg);
+        border-radius: 0.5rem;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: $body-color;
+        border-radius: 0.25rem;
+        display: block;
+        top: 12px;
+        left: 0;
+      }
     }
   }
 }
