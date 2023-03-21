@@ -14,7 +14,7 @@
           {% for post in articles limit: 8 %}
             <article>
               <figure>
-                <a href="{{ post.url }}">
+                <a href="{{ post.url }}" title="{{ post.title }}">
                   <img src="{{ post.thumb }}" alt="{{ post.title }}" />
                 </a>
               </figure>
@@ -37,7 +37,7 @@
               {% if post.categories contains "video" %}
                 <article>
                   <figure>
-                    <a href="{{ post.url }}">
+                    <a href="{{ post.url }}" title="{{ post.title }}">
                       <img src="{{ post.thumb }}" alt="{{ post.title }}" />
                     </a>
                   </figure>
