@@ -2,6 +2,7 @@
 layout: main
 title: Do zero ao site! Curso completo de Figma, HTML e CSS
 permalink: /curso/do-zero-ao-site-curso-completo-de-figma-html-e-css
+published: false
 ---
 
 <div class="frame-video-container">

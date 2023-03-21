@@ -7,10 +7,6 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-
     h3 {
       display: none;
     }
@@ -18,19 +14,11 @@
     img {
       border-radius: 1rem;
     }
-
-    .feature-article {
-      a,
-      img,
-      figure {
-        width: 100%;
-      }
-    }
   }
 
   .article-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 
     img {
