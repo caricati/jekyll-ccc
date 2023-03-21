@@ -1,7 +1,6 @@
 #header {
   height: 70px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   font-family: $font-menu;
   background-color: $white-color;
@@ -10,6 +9,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     nav {
       a {

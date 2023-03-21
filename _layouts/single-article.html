@@ -11,9 +11,23 @@
       <article id="single" class="max-width">
         <header>
           <h1>{{ page.title }}</h1>
+          <time pubdate datetime="{{ page.date | date: '%Y-%m-%d %T' }}">
+            <img src="{{'/assets/icons/calendar-dark.svg' | absolute_url}}" alt="Publicado em"/>
+            {{ page.date | date: '%d/%m/%Y %H:%M' }}
+          </time>
         </header>
         {{ content }}
-        {% include ads-single.html %}
+        <footer>
+          <div class="tags">
+            {% for tag in page.tags limit: 3 %}
+              <span>{{ tag }}</span>
+            {% endfor %}
+          </div>
+          <div class="comments">
+            <div id="disqus_thread"></div>
+          </div>
+          {% include ads-single.html %}
+        </footer>
       </article>
       <div class="max-width">
         <header class="heading">
@@ -38,4 +52,14 @@
       {% include footer-course.html %}
     </main>
   </body>
+
+  <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://caricati-labs.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <script id="dsq-count-scr" src="//caricati-labs.disqus.com/count.js" async></script>
 </html>

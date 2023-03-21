@@ -67,4 +67,4 @@ Meteor.startup(() => {
 
 6) Execute o comando `meteor` para iniciar o servidor MeteorJS e navegue para `http://localhost:3000` em seu navegador para ver o aplicativo em execução.
 
-Pronto! Agora sua aplicação MeterJS está rodando com TypeScript.
+Pronto! Agora sua aplicação MeteorJS está rodando com TypeScript.

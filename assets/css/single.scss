@@ -79,9 +79,37 @@
     h1 {
       font-size: 2.5rem;
     }
+
+    time {
+      color: #9497a7;
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+
+      img {
+        width: 18px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .comments {
+    margin-bottom: 3rem;
   }
 
   .frame-video-container {
     margin-bottom: 20px;
+  }
+
+  .tags {
+    margin: 2rem 0 3rem;
+
+    span {
+      color: #382a24;
+      background-color: #f7e6df;
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      margin-right: 0.5rem;
+    }
   }
 }
