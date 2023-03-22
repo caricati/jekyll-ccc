@@ -67,10 +67,16 @@
     font-size: 1.75rem;
   }
 
-  p > code {
+  p > code,
+  h2 > code,
+  h3 > code {
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     background-color: #e7ebfa;
+  }
+
+  strong {
+    font-weight: 600;
   }
 
   header {

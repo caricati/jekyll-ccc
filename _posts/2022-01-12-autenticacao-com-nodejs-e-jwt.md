@@ -18,21 +18,21 @@ tags:
 Para fazer autenticação com o Express utilizando JWT (JSON Web Tokens), você precisa seguir alguns passos.
 
 1) Instale as dependências necessárias:
-{% highlight shell %}
+```shell
 npm install express jsonwebtoken bcryptjs body-parser
-{% endhighlight %}
+```
 
 2) Configure seu servidor Express para usar o <code>body-parser</code> para analisar o corpo da solicitação e o <code>json</code> como formato de resposta padrão:
-{% highlight javascript %}
+```javascript
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
-{% endhighlight %}
+```
 
 3) Crie rotas para o login e o registro de usuários. No exemplo abaixo, o usuário envia seu nome de usuário e senha no corpo da solicitação:
-{% highlight javascript %}
+```javascript
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
@@ -67,10 +67,10 @@ app.post('/login', async (req, res) => {
     res.status(500).send();
   }
 });
-{% endhighlight %}
+```
 
 4) Crie uma rota protegida que exige autenticação. Para fazer isso, crie uma função de middleware que verifica se o token JWT é válido e, em seguida, a use na rota que deseja proteger:
-{% highlight javascript %}
+```javascript
 function authenticateToken(req, res, next) {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
@@ -87,12 +87,12 @@ function authenticateToken(req, res, next) {
 app.get('/protected', authenticateToken, (req, res) => {
   res.send(`Olá, ${req.user.name}!`);
 });
-{% endhighlight %}
+```
 
 5) Para testar a rota protegida, faça uma solicitação GET para /protected com um cabeçalho Authorization que contém o token JWT:
-{% highlight makefile %}
+```makefile
 Authorization: Bearer <token>
-{% endhighlight %}
+```
 
 Isso é um exemplo básico de como fazer autenticação com o Express usando JWT. Obviamente, existem muitas outras coisas que você pode fazer para tornar sua autenticação mais segura e robusta, como verificar o nome de usuário e a senha em um banco de dados, usar HTTPS e muito mais.
 
@@ -105,8 +105,8 @@ O termo "Bearer" em si se refere ao titular ou portador do token. No contexto da
 
 Por exemplo, um cabeçalho de autorização válido com um token JWT poderia ser o seguinte:
 
-{% highlight makefile %}
+```makefile
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-{% endhighlight %}
+```
 
 Neste exemplo, a palavra "Bearer" indica que o token JWT é válido e que o usuário associado a ele tem permissão para acessar os recursos protegidos pelo servidor.
