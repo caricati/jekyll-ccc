@@ -40,6 +40,7 @@
       background-color: $tag-bg-color;
       border-radius: 0.25rem;
       padding: 0.125rem 0.5rem;
+      white-space: nowrap;
     }
   }
 
@@ -64,6 +65,27 @@
     figure img {
       width: 150px;
       border-radius: 8px;
+    }
+
+    @media (max-width: 570px) {
+      display: block;
+
+      figure {
+        margin-bottom: 0.625rem;
+      }
+      .tags {
+        margin-bottom: 0.625rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      a {
+        display: block;
+      }
+
+      figure img {
+        width: 100%;
+      }
     }
   }
 }

@@ -22,11 +22,21 @@
           color: $primary-color;
         }
       }
+
+      @media (max-width: 580px) {
+        a:first-child {
+          display: none;
+        }
+      }
     }
   }
 
   .logo {
-    margin-right: 1.5rem;
-    border-radius: 0.5rem;
+    display: flex;
+    @media (max-width: 415px) {
+      svg {
+        width: 138px;
+      }
+    }
   }
 }

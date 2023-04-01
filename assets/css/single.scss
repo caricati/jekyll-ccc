@@ -1,36 +1,6 @@
-#single .course-timeline,
-.course-timeline {
-  list-style: none;
-  margin: 0;
-
-  & > li {
-    background-color: #eaeef8;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-
-    h3 {
-      font-size: 20px;
-      margin: 0;
-      border-bottom: 2px solid $body-color;
-      padding: 1rem;
-    }
-
-    h4 {
-      font-size: 1rem;
-      font-family: $font-default;
-      margin: 0;
-    }
-
-    > ul {
-      padding: 1rem;
-      list-style: none;
-      margin: 0;
-    }
-
-    p {
-      font-size: 0.9375rem;
-      color: $text-gray-color;
-    }
+@media (max-width: 400px) {
+  .single-video-frame {
+    padding: 3rem 0;
   }
 }
 
@@ -99,6 +69,18 @@
     }
   }
 
+  @media (max-width: 525px) {
+    header {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+
   .comments {
     margin-bottom: 3rem;
   }
@@ -119,6 +101,7 @@
       padding: 0 1.25rem 0 1.5rem;
       border-radius: 0.5rem;
       margin-right: 1rem;
+      margin-bottom: 0.625rem;
       position: relative;
 
       &::before {

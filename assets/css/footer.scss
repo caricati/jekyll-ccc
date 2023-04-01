@@ -11,6 +11,18 @@
       color: $white-color;
       font-size: 3.25rem;
     }
+
+    @media (max-width: 615px) {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      h2 {
+        font-size: 2rem;
+      }
+    }
   }
 
   .course-description {
@@ -19,8 +31,17 @@
     column-gap: 2.5rem;
     align-items: center;
 
-    img {
+    @media (max-width: 865px) {
+      display: block;
+
+      .course-thumb {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .course-thumb img {
       width: 100%;
+      max-width: 400px;
       border-radius: 8px;
       box-shadow: 4px 4px 0 4px rgba(0, 0, 0, 0.05);
     }
