@@ -2,6 +2,23 @@
 layout: single-course
 title: Do zero ao site! Curso completo de Figma, HTML e CSS
 permalink: /curso/do-zero-ao-site-curso-completo-de-figma-html-e-css
+description: Esse é um curso bem detalhado para quem não sabe nada de desenvolvimento web. Vamos aprender passo a passo quais ferramentas iremos utilizar, como o navegador irá interpretar suas instruções e como escrever instruções de forma clara e fácil.
+tags:
+  - curso html
+  - curso css
+  - curso figma
+  - figma
+  - html
+  - css
+  - desenvolvimento web
+  - aprender html
+  - aprender css
+  - aprender figma
+  - curso de web design
+  - web design
+  - criar seu site
+  - como fazer um site
+  - como criar meu site
 published: true
 ---
 
