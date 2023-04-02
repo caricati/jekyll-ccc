@@ -59,8 +59,8 @@ published: true
       <figure>
         <img src="/assets/img/course/do-zero-ao-site/magnifying.svg" alt="Lupa" />
       </figure>
-      <h2>Técnicas de SEO</h2>
-      <p>Vamos aprender técnicas para colocar nossos sites entre os primeiros nos sites de buscas, utilizando técnicas de otimização para motores de busca.</p>
+      <h2>Dominando o SEO</h2>
+      <p>Você aprenderá estratégias eficazes para posicionar seu site entre os primeiros resultados nos mecanismos de busca, aplicando técnicas de otimização avançadas para motores de busca (SEO).</p>
     </article>
     <article>
       <figure>
@@ -112,8 +112,8 @@ published: true
   <div class="do-you-know">
     <div class="middle-width">
       <h2>Você sabia?</h2>
-      <p>A maioria das pessoas acham que desenvolver software não é para elas, por achar muito complexo. Neste curso <strong>eu posso te ajudar</strong> a dar o ponta pé inicial para você começar a desenvolver.</p>
-      <p>Esse site por exemplo, foi desenvolvindo apenas com Figma, HTML e CSS. As mesmas tecnologias que vamos aprender neste curso.</p>
+      <p>A maioria das pessoas acham que desenvolver software não é para elas, por achar muito complexo. Neste curso <strong>eu vou te ajudar</strong> a dar o ponta pé inicial para você começar a desenvolver.</p>
+      <p>Essa página por exemplo, foi desenvolvinda apenas com Figma, HTML e CSS. As mesmas tecnologias que vamos aprender neste curso.</p>
     </div>
   </div>
 
