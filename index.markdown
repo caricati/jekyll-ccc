@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+description: Aqui no Caricati Labs fazemos testes e estudos relacionados a tecnologia, inovação e empreendedorismo. Um portal onde concentramos informações registradas em artigos, vídeos e cursos.
 tags:
   - artigos
   - videos
