@@ -21,7 +21,7 @@
 title: Caricati Labs
 email: thales.caricati@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Me chamo Thales Caricati e estou aqui para compartilhar um pouco de conhecimento sobre tecnologia. Você também pode me acompanhar nas redes para me conhecer um pouco mais.
+  Estou aqui para compartilhar um pouco de conhecimento sobre tecnologia. Você também pode me acompanhar nas redes para me conhecer um pouco mais.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
