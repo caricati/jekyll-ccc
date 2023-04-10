@@ -28,7 +28,13 @@ published: true
     <p class="price">
       <span>R$ 139,90</span> até 10x sem juros
     </p>
-    <a href="https://go.hotmart.com/P80885095O?dp=1" class="btn btn-large btn-buy" target="_blank" rel="noopener noreferrer">
+    <a 
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-large btn-buy"
+      href="https://go.hotmart.com/P80885095O?dp=1"
+      onclick="gtag('event', 'click', {'event_category': 'buy now', 'event_label': 'button on pitch', 'value': 1});"
+    >
       <img src="/assets/icons/cart.svg" alt="carrinho">
       Compre agora
     </a>
@@ -122,7 +128,13 @@ published: true
     <div>
       <h2>Venha fazer parte!</h2>
       <p>Por apenas <strong>R$ 139,90</strong> em até <strong>10x sem juros</strong>.</p>
-      <a href="https://go.hotmart.com/P80885095O?dp=1" class="btn btn-buy" target="_blank" rel="noopener noreferrer">
+      <a
+        class="btn btn-buy"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://go.hotmart.com/P80885095O?dp=1"
+        onclick="gtag('event', 'click', {'event_category': 'buy now', 'event_label': 'last button', 'value': 1});"
+      >
         <img src="/assets/icons/cart.svg" alt="carrinho">
         Compre agora
       </a>
