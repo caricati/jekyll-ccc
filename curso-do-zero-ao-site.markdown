@@ -40,6 +40,24 @@ published: true
     </a>
   </div>
 
+  <div class="video-container">
+    <div class="frame-video-container single-video-frame">
+        <div class="max-width">
+          <div class="full-video-frame">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/U02ZA2nuHhE?autoplay=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+  </div>
+
   <div class="description middle-width">
     <p>
       Esse é um curso bem detalhado para quem não sabe nada de desenvolvimento web. Vamos aprender passo a passo quais ferramentas iremos utilizar, como o navegador irá interpretar suas instruções e como escrever instruções de forma clara e fácil.
