@@ -33,7 +33,7 @@ published: true
       rel="noopener noreferrer"
       class="btn btn-large btn-buy"
       href="https://go.hotmart.com/P80885095O?dp=1"
-      onclick="gtag('event', 'click', {'event_category': 'buy now', 'event_label': 'button on pitch', 'value': 1});"
+      onclick="gtag('event', 'BuyNow', {'event_category': 'Call to action', 'event_label': 'Zero ao site: on the pitch', 'value': 1});"
     >
       <img src="/assets/icons/cart.svg" alt="carrinho">
       Compre agora
@@ -133,7 +133,7 @@ published: true
         target="_blank"
         rel="noopener noreferrer"
         href="https://go.hotmart.com/P80885095O?dp=1"
-        onclick="gtag('event', 'click', {'event_category': 'buy now', 'event_label': 'last button', 'value': 1});"
+        onclick="gtag('event', 'BuyNow', {'event_category': 'Call to action', 'event_label': 'Zero ao site: on the bottom', 'value': 1});"
       >
         <img src="/assets/icons/cart.svg" alt="carrinho">
         Compre agora
