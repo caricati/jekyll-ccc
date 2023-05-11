@@ -1,5 +1,6 @@
 ---
 layout: single-course
+published: false
 title: Do zero ao site! Curso completo de Figma, HTML e CSS
 permalink: /curso/do-zero-ao-site-curso-completo-de-figma-html-e-css
 description: Um laboratório tecnológico onde abordamos todos os temas do mundo da tecnologia, dos games até o desenvolvimento de software, do design até arquitetura. E aí, vamos falar de tecnologia?
@@ -19,7 +20,6 @@ tags:
   - criar seu site
   - como fazer um site
   - como criar meu site
-published: true
 ---
 
 <section id="course">
