@@ -66,4 +66,17 @@
       border-radius: 0.5rem;
     }
   }
+
+  .topbanner {
+    max-width: 1280px;
+    margin: 2rem auto;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 1290px) {
+      margin: 2rem;
+    }
+  }
 }

@@ -8,20 +8,30 @@
     <main id="home">
       {% include header.html %}
 
+      <div class="topbanner">
+        <a href="https://www.youtube.com/playlist?list=PLx1hS8qWblJ1iuRdENORwUYWP_UtHJJ8i" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/assets/img/banner-dozeroaosite.png"
+            alt="CaricatiLabs no Youtube"
+          />
+        </a>
+      </div>
+
       <section class="articles max-width">
-        {% assign articles = site.posts | where_exp: "item", "item.categories contains 'artigo'" %}
+        {% assign articles = site.posts | where_exp: "item", "item.categories
+        contains 'artigo'" %}
         <div class="article-list">
           {% for post in articles limit: 8 %}
-            <article>
-              <figure>
-                <a href="{{ post.url }}" title="{{ post.title }}">
-                  <img src="{{ post.thumb }}" alt="{{ post.title }}" />
-                </a>
-              </figure>
-              <h3>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              </h3>
-            </article>
+          <article>
+            <figure>
+              <a href="{{ post.url }}" title="{{ post.title }}">
+                <img src="{{ post.thumb }}" alt="{{ post.title }}" />
+              </a>
+            </figure>
+            <h3>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+          </article>
           {% endfor %}
         </div>
       </section>
@@ -32,21 +42,20 @@
             <h2>Últimos vídeos</h2>
           </header>
           <div class="video-list">
-            {% assign videos = site.posts | where_exp: "item", "item.categories contains 'video'" %}
-            {% for post in videos limit: 6 %}
-              {% if post.categories contains "video" %}
-                <article>
-                  <figure>
-                    <a href="{{ post.url }}" title="{{ post.title }}">
-                      <img src="{{ post.thumb }}" alt="{{ post.title }}" />
-                    </a>
-                  </figure>
-                  <h3>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                  </h3>
-                </article>
-              {% endif %}
-            {% endfor %}
+            {% assign videos = site.posts | where_exp: "item", "item.categories
+            contains 'video'" %} {% for post in videos limit: 6 %} {% if
+            post.categories contains "video" %}
+            <article>
+              <figure>
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                  <img src="{{ post.thumb }}" alt="{{ post.title }}" />
+                </a>
+              </figure>
+              <h3>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h3>
+            </article>
+            {% endif %} {% endfor %}
           </div>
         </section>
       </div>
